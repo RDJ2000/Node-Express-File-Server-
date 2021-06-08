@@ -68,7 +68,7 @@ async function fetchData(){
    res.json("value uploaded")
  })
 
- app.get('/fetchData', async(req, res) => {
+ app.get('/fetchData',cors(), async(req, res) => {
    let fdata=[]
   const snapshot = await db.collection('users').get();
 snapshot.forEach((doc) => {
