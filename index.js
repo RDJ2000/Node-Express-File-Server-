@@ -41,7 +41,9 @@ const connectionParams={
 // })
 
 //posting data in db
-
+app.listen(process.env.PORT || 3000, '0.0.0.0', () => {
+  console.log("Server is running.");
+});
 async function postData(){
   const docRef = db.collection('users');
 
