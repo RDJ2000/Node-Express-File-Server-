@@ -35,10 +35,10 @@ const connectionParams={
   useUnifiedTopology: true 
 }
 
-// const port = 3000
-// app.listen(port, () => {
-//   console.log(`Example app listening at http://localhost:${port}`)
-// })
+const port = 3000
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
 
 //posting data in db
 
